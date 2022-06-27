@@ -1,0 +1,62 @@
+{% extends 'testapp/base.html'%}
+{%load static%}
+
+{%block title%}Our Products{%endblock%}
+{%block productactive%}active text-danger {%endblock%}
+<style>
+img{
+ height: 500px; 
+ width: 400px;
+}
+
+
+</style>
+
+
+{%block body%}
+
+<div class="jumbotron  ">
+    <h1>Our Range of Products..</h1>
+</div>
+<div class="container text-danger">
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img  src="{% static 'testapp/images/oneliter1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title">1 Liter</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="{% static 'testapp/images/500ml.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">500 Ml</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="{% static 'testapp/images/2.jpeg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">250 ml</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="{% static 'testapp/images/2.jpeg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">750 ML</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{%endblock%}

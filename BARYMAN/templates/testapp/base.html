@@ -1,0 +1,98 @@
+<!doctype html>
+{%load static%}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- font awsome CSS added manually -->
+    <link rel="stylesheet" href="{% static 'js/all.min.css'%}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <title>{%block title%} {%endblock%}</title>
+    <style>
+      body {background-color: #760daa;
+            color: antiquewhite;}
+      
+      .jumbotron{color: black;}
+      a {
+        color: white
+      }
+     
+    </style>
+  </head>
+  <body>
+    
+    <!-- <nav style="background-color:#530a77; font-family: Times New Roman;" class="navbar navbar-expand-lg  "> -->
+      <nav class="navbar navbar-expand-lg bg-dark "> 
+        <a class="navbar-brand " href="/main">
+          <img src="{%static 'testapp/images/Baryman.png'%}" width="100" height="30" alt="">
+        </a> 
+     
+      <button class="navbar-toggler btn btn-success active" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <button type="button" class="btn btn-success">Success</button> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        
+          
+          <li class="nav-item ">
+            <a class="nav-link {%block homeactive%}{%endblock%}" href="/main">Home</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link {%block aboutactive%}{%endblock%} " href="/main/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {%block contactactive%}{%endblock%} " href="/main/contact">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle {%block productactive%}{%endblock%}" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Our Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="/main/product">All Products</a>
+              <a class="dropdown-item" href="/main/one">1 Liter </a>
+              <a class="dropdown-item" href="/main/half">500 ml </a>
+              <a class="dropdown-item" href="#">250 ml </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/main/contact"> For PRIVATE BRANDING</a>
+            </div>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <hr>
+{%block body%}
+{%endblock%}
+<footer class="bg-dark text-center text-lg-start my-5">
+  <div><p>follow us on </p>
+  <h3><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram-square"></i></h3></div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-primary" href="https://Baryman.com/"><i class="fa-solid fa-droplet"></i>Baryman.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+  
+   
+    
+  
+
+    <!-- js of font awsome added manually -->
+    <script src="{% static 'js/all.min.js'%}"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    
+     
+  </body>
+</html>
